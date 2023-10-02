@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&family=Tektur:wght@600&display=swap');
+@font-face{
+  font-family: 'digital-7';
+  src: url('../fonts/digital-7.ttf');
+ } 
+ :root{
+  --lighting-color:rgb(234,32,98) ;
+ }
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  height: 80vh;
+  background-image: url(./front-view-black-hourglass-dark-surface.jpg);
+  background-size: cover;
+  background-attachment: fixed; /* This keeps the background image fixed */
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 150px;
+  user-select: none;
+
+}
+
+#container-box {
+  margin: 100px;
+  padding: 50px;
+  background-color: rgba(255, 255, 255, 0.053);
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2), 0px 0px 10px rgba(0, 0, 0, 0.2);
+  
+}
+
+#clock {
+  color: white;
+  font-weight: ;
+  font-size: 50px;
+  font-family: 'digital-7', 'Tektur', sans-serif;
+  font-stretch: normal;
+  position: sticky;
+  text-shadow: 0 0 25px var(--lighting-color);
+  position: relative;
+}
+#clock::after{
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  top:0;
+  filter: blur(2px);
+
+}
+#clock::before{
+  content: ;
+  position: absolute;
+  left: 0;
+  top:0;
+  width: 100%;
+}
+/*h2{
+  background:linear-gradient (0deg, rgb(49, 193, 90) 0%, rgba(102, 247, 113, 1) 100%);
+font-size: 20px;
+margin: top 200px;;
+font-family: 'digital-7';
+src: url('../fonts/digital-7.ttf');
+position: absolute;
+border: 0px;
+right: 0px;
+top: 10px;
+
+}*/
+
+h

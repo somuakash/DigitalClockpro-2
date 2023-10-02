@@ -1,0 +1,18 @@
+h2.animate-text {
+  font-size: 3rem;
+  text-align: center;
+  background: linear-gradient(45deg, #28C76F, #0396FF,#7c2275,#49c940);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: text-animation 2s infinite alternate;
+}
+
+@keyframes text-animation {
+  0% {
+    transform: scale(1);
+    
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
